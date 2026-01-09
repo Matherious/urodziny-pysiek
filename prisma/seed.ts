@@ -55,10 +55,10 @@ async function main() {
 
     // Timeline
     const timelineItems = [
-        { time: '18:00', title: 'Welcome', description: 'Cocktails & Jazz', order: 1, isFamilyOnly: false },
-        { time: '19:00', title: 'Family Dinner', description: 'Private Dining Room', order: 2, isFamilyOnly: true },
-        { time: '21:00', title: 'The Party', description: 'Music & Drinks', order: 3, isFamilyOnly: false },
-        { time: '02:00', title: 'After Party', description: 'Secret Location', order: 4, isFamilyOnly: false },
+        { time: '18:00', title: 'Welcome', description: 'Cocktails & Jazz', order: 1, visibleTo: 'ALL' },
+        { time: '19:00', title: 'Family Dinner', description: 'Private Dining Room', order: 2, visibleTo: 'FAMILY' },
+        { time: '21:00', title: 'The Party', description: 'Music & Drinks', order: 3, visibleTo: 'ALL' },
+        { time: '02:00', title: 'After Party', description: 'Secret Location', order: 4, visibleTo: 'ALL' },
     ]
 
     for (const item of timelineItems) {
